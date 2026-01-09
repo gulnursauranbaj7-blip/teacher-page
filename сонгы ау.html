@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Ұстазға құттықтау</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body { 
+      font-family: 'Arial', sans-serif; 
+      background: linear-gradient(to bottom, #ffe6f0, #ffcce0); 
+      margin: 0; 
+      padding: 0; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
+    }
+
+    .container { 
+      max-width: 900px; 
+      background: #fff0f6; 
+      padding: 30px; 
+      border-radius: 20px; 
+      box-shadow: 0 15px 25px rgba(255,0,100,0.2); 
+      text-align: center; 
+      border: 2px solid #ff99cc;
+      position: relative;
+    }
+
+    h1 { 
+      font-family: 'Pacifico', cursive;
+      color: #d63384; 
+      font-size: 36px; 
+      margin-bottom: 20px; 
+    }
+
+    h2 { 
+      color: #e07bcd; 
+      margin-top: 40px; 
+      font-size: 24px; 
+    }
+
+    p { 
+      font-size: 18px; 
+      line-height: 1.6; 
+      margin: 15px 0; 
+      color: #660033;
+    }
+
+    .bold { 
+      font-weight: bold; 
+      color: #b30059; 
+    }
+
+    img { 
+      max-width: 100%; 
+      height: auto; 
+      margin: 15px 0; 
+      border-radius: 15px; 
+      box-shadow: 0 5px 20px rgba(255,0,100,0.2); 
+    }
+
+    iframe { 
+      margin: 20px 0; 
+      border-radius: 15px; 
+    }
+
+    /* Жүректер анимациясы */
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .hearts span {
+      position: absolute;
+      color: #ff1a75;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+      user-select: none;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(1); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hearts">
+      <span style="left:10%;">❤️</span>
+      <span style="left:30%;">💖</span>
+      <span style="left:50%;">❤️</span>
+      <span style="left:70%;">💗</span>
+      <span style="left:90%;">💖</span>
+    </div>
+
+    <h1>Құрметті Тұрғанбай Айназ ұстаз! 💐</h1>
+    <p>
+      Біз, <span class="bold">29 оқушы</span>, сізге шын жүректен алғысымызды білдіреміз!<br>
+      ҰБТ жолында <span class="bold">химия мен биология мектебіндегі биология курсын қадағалап, бізді бірге дайындағаныңыз</span> үшін үлкен рахмет!  
+      Сіздің мейірімділігіңіз, қамқорлығыңыз бен сабақты қызықты өткізуіңіз бізге шабыт берді. <br><br>
+      Осы сізбен өткен уақытта біз дисциплинаға да үйрене білдік. Алдағы уақытта осы бірге жұмыс жасаған еңбектеріміз өз жемісін беріп, менің оқушыларым 140 балл алып, қазір мықты универде қалаған мамандықтарында оқиды деген мақтанышпен отырғаныңызды қалаймыз.
+    </p>
+
+    <!-- Фото 1 -->
+    <img src="https://drive.google.com/uc?export=view&id=1S2dLHMua7PiOo8V56xUvjXZsBL1XBHOe" alt="Фото 1">
+    
+    <!-- Фото 2 -->
+    <img src="https://drive.google.com/uc?export=view&id=1ov6m1BHMQkaDdUiDNHCSKr7HYTAruOcv" alt="Фото 2">
+    
+    <!-- Фото 3 -->
+    <img src="https://drive.google.com/uc?export=view&id=1z-N_C0DWGTNgX6x2QFCS0OWayb9DXcS9" alt="Фото 3">
+
+    <!-- Видео сәттер -->
+    <h2>Осындай қызықты сәттер өтті!</h2>
+    <iframe 
+      src="https://drive.google.com/file/d/1DtocNsC0hvkQAySbR7XhwpSp8gltxjyC/preview" 
+      width="560" height="315" 
+      allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+
+    <!-- YouTube музыка -->
+    <iframe width="0" height="0" 
+      src="https://www.youtube.com/embed/v8lzGhyIaLE?autoplay=1&loop=1&playlist=v8lzGhyIaLE" 
+      title="Музыка" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
